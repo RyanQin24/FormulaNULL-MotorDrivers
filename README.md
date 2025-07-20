@@ -8,3 +8,6 @@ Members of the team:
 - Alexander Jin-Scheltgen
 - Ryan Qin
 - Raymond Wu
+
+If you like to see an overview, please visit my linkedin:
+https://www.linkedin.com/in/ryan-qin-ece/
