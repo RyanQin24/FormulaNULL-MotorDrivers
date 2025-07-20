@@ -10,4 +10,4 @@ Members of the team:
 - Raymond Wu
 
 If you like to see an overview, please visit my linkedin:
-https://www.linkedin.com/in/ryan-qin-ece/
+[https://www.linkedin.com/in/ryan-qin-ece/](https://www.linkedin.com/feed/update/urn:li:activity:7335318180292132864/)
