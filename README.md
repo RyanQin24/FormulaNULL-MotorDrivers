@@ -3,7 +3,7 @@
 Formula NULL was a 19-hour hardware hackathon focused on building RC race cars using repurposed e-waste. Teams were challenged to create a functional car within a volume constraint of 60cm × 60cm × 60cm.
 
 Image of our RC car:
-![IMG_1437](https://github.com/user-attachments/assets/62c870f1-b3f9-4a65-b4ed-ee1d9e208550)
+![IMG_1437](https://github.com/user-attachments/assets/2067cb19-3ddc-440e-aadf-3c439d639543)
 
 I participated as part of Team Power Vector, a 3-member group consisting of:
 
