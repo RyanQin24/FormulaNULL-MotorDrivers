@@ -10,7 +10,7 @@ I participated as part of Team Power Vector, a 3-member group consisting of:
 
 - Raymond Wu
 
-#This repository includes:
+ This repository includes:
 
 🔋 Schematics for the electrical system
 
