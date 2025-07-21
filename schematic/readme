@@ -1,1 +1,4 @@
 This directory contains all our schematics.
+
+
+Note: Our car's wiring may differ from different board and module layout due to timing and resource constraint at hackathon. Schematic is only used to validate the idea and not to reproduce PCBs.
