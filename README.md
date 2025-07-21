@@ -1,15 +1,20 @@
-# About this RC Car Project
+# About this Formula Null RC Car Project
 
-C++ Code Written for Arduino Uno
+Formula NULL was a 19-hour hardware hackathon focused on building RC race cars using repurposed e-waste. Teams were challenged to create a functional car within a volume constraint of 60cm × 60cm × 60cm.
 
-Motor driver code written for "Power Vector" Formula NULL team
+I participated as part of Team Power Vector, a 3-member group consisting of:
 
-Formula NULL was a hack-a-thon aimed at designing a small RC car (max. 60cm x 60cm x 60cm volume) using e-waste
-
-Members of the team: 
 - Alexander Jin-Scheltgen
+
 - Ryan Qin
+
 - Raymond Wu
 
-If you like to see an overview, please visit my linkedin:
+This repository includes:
+🔋 Schematics for the electrical system
+
+🔧 C++ Firmware for the Arduino Uno based motor driver 
+
+
+For a brief overview and media from the event, check out my LinkedIn post:
 [https://www.linkedin.com/in/ryan-qin-ece/](https://www.linkedin.com/feed/update/urn:li:activity:7335318180292132864/)
