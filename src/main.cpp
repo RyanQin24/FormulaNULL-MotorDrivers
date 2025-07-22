@@ -7,7 +7,9 @@ int en_B{3};
 
 int in1_A{9};                              //control pin for  motor polarity
 
-int chl1{10};                               //reading values for power channel for the motor
+int chl1{10};                              //reading values for motor power channel from the RC reciever
+
+int enable{11};                            //Safety Motor Driver deactivation pin
 
 int va_pwm{0};                             //reading pwm ranging
 int va2_pwm{0};                            //value after calculations done on it
@@ -32,9 +34,10 @@ void setup() {
   pinMode(en_B, OUTPUT);
   pinMode(chl1, INPUT);
 
-  //Turning all the motors to LOW to begin with
+  //Turning all the motors to LOW and deactivating driver to begin with
   digitalWrite(in1_A, LOW);
-  // digitalWrite(in2_A, LOW);
+  digitalWrite(in2_A, LOW);
+  digitalWrite(enable, HIGH);
 
 
   bool checkSwitch();
@@ -110,21 +113,28 @@ void loop() {
   va_pwm = constrain(va_pwm, lowest, highest);
   
   //code to normalize the recorded pulse width between (0, 255)
-  if (va_pwm == 0 || (va_pwm > va_low && va_pwm < va_high)){
+  if ((va_pwm > va_low && va_pwm < va_high)){
+    digitalWrite(enable,HIGH);
     va2_pwm = 0;
     va2_pwmB =0;
   } else{
     if (va_pwm >= va_high){
+      digitalWrite(enable,LOW);
       va2_pwm  = map(va_pwm, va_high, highest, 50, 255);
       va2_pwm = constrain(va2_pwm, 50, 255);
       va2_pwmB = map(va_pwm, va_high, highest, 50, 255*down_shift);
       va2_pwmB = constrain(va2_pwmB, 50, 255*down_shift);
-    } else {
+    } else if(va_pwm <= va_low){
+      digitalWrite(enable,LOW);
       va2_pwm  = map(va_pwm, lowest, va_low, -255, -50);
       va2_pwm = constrain(va2_pwm, -255, -50);
       va2_pwmB = map(va_pwm, lowest, va_low, -255*down_shift, -50);
       va2_pwmB =constrain(va2_pwm, -255*down_shift, -50);
-    }
+    }else{
+      //disabling motors if signals are invalid
+      digitalWrite(enable,HIGH);
+      va2_pwm = 0;
+      va2_pwmB =0;
   } 
  
   if (checkSwitch() != false){
