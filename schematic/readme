@@ -1,3 +1,3 @@
 This directory contains all our schematics.
 
-Note: Our RC car's wiring may differ from different board and module layout due to timing and resource constraint at hackathon. Schematic is only used to validate the idea and not to reproduce PCBs.
+Note: Our RC car's wiring may differ from connection (e.g. connector and module placement) due to timing and resource constraint at hackathon. Schematic is only used to validate the idea. It is NOT USED not to reproduce PCBs.
