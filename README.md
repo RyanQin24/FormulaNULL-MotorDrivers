@@ -6,7 +6,6 @@ Formula NULL was a 19-hour hardware hackathon focused on building RC race cars u
 
 ![IMG_1437](https://github.com/user-attachments/assets/44b71a0b-80f7-4dd3-8f6b-62efd82c1480)
 
-
 I participated as part of Team Power Vector, a 3-member group consisting of:
 
 - Alexander Jin-Scheltgen
